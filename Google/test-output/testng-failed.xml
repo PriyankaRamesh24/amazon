@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://www.google.com/"/>
+  <test thread-count="5" parallel="classes" name="Test(failed)">
+    <parameter name="Browser" value="chrome"/>
+    <classes>
+      <class name="com.qa.testscripts.GoogleSearch">
+        <methods>
+          <include name="main"/>
+          <include name="teardown"/>
+          <include name="search"/>
+        </methods>
+      </class> <!-- com.qa.testscripts.GoogleSearch -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
